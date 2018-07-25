@@ -7,7 +7,7 @@ import java.util.List;
 
 class Triangle {
     enum Type {
-        EQUILATERAL, ISOCELES, SCALENE
+        EQUILATERAL, ISOSCELES, SCALENE
     }
 
     private List<Integer> sides = new ArrayList<>();

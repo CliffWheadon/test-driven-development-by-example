@@ -10,10 +10,10 @@ public class TriangleTests {
         assert(EQUILATERAL == new Triangle(1,1,1).getType());
     }
 
-    @Test public void testIsoceles() {
-        assert(ISOCELES == new Triangle(1,1,2).getType());
-        assert(ISOCELES == new Triangle(1,2,2).getType());
-        assert(ISOCELES == new Triangle(1,2,1).getType());
+    @Test public void testIsosceles() {
+        assert(ISOSCELES == new Triangle(1,1,2).getType());
+        assert(ISOSCELES == new Triangle(1,2,2).getType());
+        assert(ISOSCELES == new Triangle(1,2,1).getType());
     }
 
     @Test public void testScalene() {
