@@ -1,4 +1,4 @@
 package com.cliffwheadon.tddbyexample.triangle;
 
-public class NotWellFormedException extends RuntimeException{
+public class NotWellFormedException extends RuntimeException {
 }
