@@ -6,7 +6,7 @@ A simple Triangle class designed using TDD.
 
 ### Building
 
-This project is built using gradle, you can invoke the gradle wrapper to build as follows:
+This project is built using gradle. You can invoke the gradle wrapper to build as follows:
 
 ``./gradlew build``
 
