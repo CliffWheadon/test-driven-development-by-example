@@ -5,14 +5,14 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
-public class Triangle {
+class Triangle {
     enum Type {
         EQUILATERAL, ISOCELES, SCALENE
     }
 
     private List<Integer> sides = new ArrayList<>();
 
-    public Triangle(int sideOneLength, int sideTwoLength, int sideThreeLength) {
+    Triangle(int sideOneLength, int sideTwoLength, int sideThreeLength) {
         sides.add(sideOneLength);
         sides.add(sideTwoLength);
         sides.add(sideThreeLength);
@@ -28,7 +28,7 @@ public class Triangle {
         }
     }
 
-    public Type getType() {
+    Type getType() {
         return Type.values()[new HashSet<>(sides).size() - 1];
     }
 }
