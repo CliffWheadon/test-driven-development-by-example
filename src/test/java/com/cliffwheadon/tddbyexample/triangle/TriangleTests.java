@@ -2,20 +2,22 @@ package com.cliffwheadon.tddbyexample.triangle;
 
 import org.junit.Test;
 
+import static com.cliffwheadon.tddbyexample.triangle.Triangle.Type.*;
+
 
 public class TriangleTests {
     @Test public void testEquilateral() {
-        assert(1 == new Triangle(1,1,1).getType());
+        assert(EQUILATERAL == new Triangle(1,1,1).getType());
     }
 
     @Test public void testIsoceles() {
-        assert(2 == new Triangle(1,1,2).getType());
-        assert(2 == new Triangle(1,2,2).getType());
-        assert(2 == new Triangle(1,2,1).getType());
+        assert(ISOCELES == new Triangle(1,1,2).getType());
+        assert(ISOCELES == new Triangle(1,2,2).getType());
+        assert(ISOCELES == new Triangle(1,2,1).getType());
     }
 
     @Test public void testScalene() {
-        assert(3 == new Triangle(1,2,3).getType());
+        assert(SCALENE == new Triangle(1,2,3).getType());
     }
 
     @Test(expected = NotWellFormedException.class)

@@ -6,6 +6,10 @@ import java.util.HashSet;
 import java.util.List;
 
 public class Triangle {
+    enum Type {
+        EQUILATERAL, ISOCELES, SCALENE
+    }
+
     private List<Integer> sides = new ArrayList<>();
 
     public Triangle(int sideOneLength, int sideTwoLength, int sideThreeLength) {
@@ -24,7 +28,7 @@ public class Triangle {
         }
     }
 
-    public int getType() {
-        return new HashSet<>(sides).size();
+    public Type getType() {
+        return Type.values()[new HashSet<>(sides).size() - 1];
     }
 }
