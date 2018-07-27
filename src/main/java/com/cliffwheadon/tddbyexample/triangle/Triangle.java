@@ -31,4 +31,8 @@ class Triangle {
     Type getType() {
         return Type.values()[new HashSet<>(sides).size() - 1];
     }
+
+    int getPerimeter() {
+        return sides.stream().reduce(0, Integer::sum);
+    }
 }

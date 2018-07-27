@@ -20,6 +20,12 @@ public class TriangleTests {
         assert(SCALENE == new Triangle(1,2,3).getType());
     }
 
+    @Test
+    public void testPerimeter() {
+        assert(3 == new Triangle(1,1,1).getPerimeter());
+        assert(4 == new Triangle(1,1,2).getPerimeter());
+    }
+
     @Test(expected = NotWellFormedException.class)
     public void testIrrational() {
         new Triangle(1,2,5);
